@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Background</title>
+
+    <style>
+        * {
+            margin: 10px auto;
+            font-weight: bold;         
+        }
+
+        body {
+            background-image: url(EjercicioBackground/background_body.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        div {
+            width: 70%;
+            height: 50px;
+            color: yellow;
+            border: 3px dotted white;
+            padding: 25px;
+        }
+
+        .a {
+            background-color: black;
+            background-clip: content-box;
+        }
+
+        .b {
+            background-color: orange;
+            background-clip: padding-box;
+        }
+
+        .c {
+            background-color: black;
+            background-clip: border-box;
+        }
+
+
+        aside {
+            width: 73%;
+            height: 300px;
+            background-color: green;
+        }
+
+        .d {
+            background-image: url(EjercicioBackground/hormiga.png), url(EjercicioBackground/tapiz-hierba.jpg);
+            width: 70%;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            color: white;
+            text-align: center;        
+        }
+
+        .e {
+            border: 3px solid blue;
+            height: 300px;
+            background-image: url(EjercicioBackground/pavo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 20%;
+            text-align: right;
+            padding: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <div class="a">
+            <p>Identificador: div1</p>
+        </div>
+
+        <div class="b">
+            <p>Identificador: div2</p>
+        </div>
+
+        <div class="c">
+            <p>Identificador: div3</p>
+        </div>
+
+    </main>
+    <aside>
+        <article class="d">Identificador: div4</article>       
+        <article class="e">Identificador: div5</article>
+    </aside>
+
+
+
+</body>
+
+</html>

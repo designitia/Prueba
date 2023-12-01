@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            width: 1200px;
+            height: 1000px;
+            border: 10px solid black;
+            position: relative;
+        }
+
+
+
+
+        .sup_izq {
+            width: 50px;
+        }
+
+        .circulo_gris {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.8));
+            position: absolute;
+
+
+        }
+
+        .sup_izq {
+            top: 50px;
+            left: 50px;
+        }
+
+        .sup_dcha {
+            top: 50px;
+            right: 50px;
+        }
+
+        .inf_izq {
+            bottom: 50px;
+            left: 50px;
+        }
+
+        .inf_dcha {
+            bottom: 50px;
+            right: 50px;
+        }
+
+        .dado {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, rgb(255 255 255), rgb(255 0 0 / 0.8));
+            position: absolute;
+            right: 40%;
+            bottom: 40%;
+        }
+
+        .punto_sup_izq {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px;
+            position: relative;
+            bottom: 40px;
+            background-image: linear-gradient(to right, rgb(255 255 255), rgb(0 0 255 / 0.8));
+
+        }
+
+        .punto_central {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px;
+            position: relative;
+            left: 90px;
+            top: 100px;
+            background-image: linear-gradient(to right, rgb(255 255 255), rgb(0 0 255 / 0.8));
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="circulo_gris sup_izq"></div>
+            <div class="circulo_gris sup_dcha"></div>
+            <div class="circulo_gris inf_izq"></div>
+            <div class="circulo_gris inf_dcha"></div>
+        </section>
+
+        <aside class="dado">
+            <div class="punto_central"></div>
+            <div class="punto_sup_izq"></div>
+            <div class="punto_sup_dcha"></div>
+            <div class="punto_inf_izq"></div>
+            <div class="punto_inf_dcha"></div>
+        </aside>
+
+
+
+    </main>
+
+</body>
+
+</html>
